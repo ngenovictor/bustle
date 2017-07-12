@@ -1,0 +1,21 @@
+{
+  "name": "bustle",
+  "description": "Small description for bustle goes here",
+  "main": "",
+  "authors": [
+    "Victor Ngeno <ngenovictor321@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "moment": "^2.18.1"
+  }
+}

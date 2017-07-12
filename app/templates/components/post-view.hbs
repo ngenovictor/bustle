@@ -1,0 +1,11 @@
+{{#each model as |post|}}
+	<div class="col-sm-4">
+		<div>
+			<img src={{post.image}}>
+		</div>
+		<div class="post-title">
+			<p>{{post.title}} by {{post.author}}</p>
+		</div>
+	</div>
+	
+{{/each}}

@@ -1,0 +1,12 @@
+{ "posts": [{
+		"title":"Title",
+		"author":"author",
+		"post":"post",
+		"image":"image"
+	}, {
+		"title":"Title",
+		"author":"author",
+		"post":"post",
+		"image":"image"
+	}]
+}

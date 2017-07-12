@@ -1,0 +1,50 @@
+<div>
+	<div class="admin-links">
+		<div class="btn btn-primary" {{action 'createUser'}}>Create User</div>
+		<div class="btn btn-primary" {{action 'createPost'}}>Create Post</div>
+	</div>
+	<div class="col-md-6">
+		{{#if isUserFormVisible}}
+			<div>
+				<form>
+					<div class="form-group">
+						<label for="name">Name</label>
+						{{input value=name id='name' class="form-control"}}
+					</div>
+					<div class="form-group">
+						<label for="role">Role</label>
+						{{input value=role id='role'	class="form-control"}}
+					</div>
+					<button class="btn btn-primary" {{action 'createUser'}}>Create</button>
+					<button class="btn btn-primary pull-right" {{action 'cancel'}}>Cancel</button>
+				</form>
+			</div>
+		{{/if}}
+		{{#if isPostFormVisible}}
+			<div>
+				<form>
+					<div class="form-group">
+						<label for="title">Title</label>
+						{{input value=title id='title'	class="form-control"}}
+					</div>
+					<div class="form-group">
+						<label for="author">Author</label>
+						{{input value=author id='author'	class="form-control"}}
+					</div>
+					<div class="form-group">
+						<label for="post">Post</label>
+						{{textarea rows="10" value=post id='post'	class="form-control"}}
+					</div>
+					<div class="form-group">
+						<label for="image">Image</label>
+						{{input value=image id='image'	class="form-control"}}
+					</div>
+					<div>
+						<button class="btn btn-primary" {{action 'submitPost'}}>Submit</button>
+						<button class="btn btn-primary pull-right" {{action 'cancel'}}>Cancel</button>
+					</div>
+				</form>
+			</div>
+		{{/if}}
+	</div>
+</div>
